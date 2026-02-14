@@ -30,24 +30,6 @@ Intelligent call routing and fallback logic
 
 ✔ Modular architecture for expanding IVR capabilities
 
-📁 Repository Structure
-AI-Enabled-Conversational-IVR-Modernization-Framework/
-│
-├── LICENSE
-├── README.md
-│
-├── docs/
-│   └── architecture.md
-│
-├── src/
-│   └── <voice_bot_logic_files>
-│
-├── examples/
-│   └── sample_call_flow.json
-│
-└── tests/
-    └── <test_scripts>
-
 🧠 How It Works
 
 1. Voice Input
@@ -66,31 +48,6 @@ AI replies via Text-to-Speech back to the caller.
 For unresolved intents, calls can be escalated to live agents.
 
 This flow mimics natural conversations and reduces caller frustration from rigid menus.
-
-📘 Usage Example
-
-Below is an example call flow definition:
-
-{
-  "welcome": "Hello! How may I help you today?",
-  "intents": [
-    {
-      "intent": "Check_Balance",
-      "samples": [
-        "What’s my balance?",
-        "Check my account balance"
-      ]
-    },
-    {
-      "intent": "Report_Issue",
-      "samples": [
-        "I have an issue with my service",
-        "Report a problem"
-      ]
-    }
-  ],
-  "fallback": "Sorry, I didn’t catch that. Can you please repeat?"
-}
 
 📄 License
 
