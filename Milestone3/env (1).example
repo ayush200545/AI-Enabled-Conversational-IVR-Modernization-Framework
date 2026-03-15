@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────
+# City General Hospital IVR — Environment Config
+# Copy this to .env and fill in your values
+# ─────────────────────────────────────────────
+
+# OpenAI — for GPT-powered NLU intent detection
+OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# Twilio — for call handling and webhook security
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=your-auth-token-here
+
+# Twilio Webhook Signature Validation
+# Options: "enforce" (production) | "log_only" (staging) | "disabled" (local dev)
+# Default when TWILIO_AUTH_TOKEN is set: enforce
+# Default when TWILIO_AUTH_TOKEN is not set: disabled
+TWILIO_VALIDATION_MODE=enforce
+
+# Hospital Agent Number — transfer calls here when user requests human
+HOSPITAL_AGENT_NUMBER=+919800000000
+
+# App Settings
+APP_ENV=development         # development | production
+LOG_LEVEL=INFO
+PORT=8000
