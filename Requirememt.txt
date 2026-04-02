@@ -1,0 +1,45 @@
+# =============================================================================
+#  City General Hospital — AI-Enabled Conversational IVR
+#  Patient Admission & Bed Availability Management
+#  Infosys BFS Internship | Python 3.11+
+# =============================================================================
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.0                  # FastAPI web framework (ASGI)
+uvicorn[standard]==0.30.0         # ASGI server (includes uvloop + httptools)
+starlette==0.41.3                 # Routing + middleware (auto-installed with FastAPI)
+
+# ── Request Parsing ───────────────────────────────────────────────────────────
+python-multipart==0.0.20          # Required for Twilio form-encoded POST bodies
+                                  # Without this, request.form() fails silently
+
+# ── Data Validation ───────────────────────────────────────────────────────────
+pydantic==2.7.4                   # Request/response validation (FastAPI v2 default)
+pydantic-settings==2.3.4          # .env file loading via BaseSettings
+
+# ── AI / NLU ─────────────────────────────────────────────────────────────────
+openai==1.35.0                    # GPT-3.5-turbo intent & entity detection
+                                  # Falls back to keyword matching if unavailable
+
+# ── HTTP Client ───────────────────────────────────────────────────────────────
+httpx==0.27.0                     # HTTP client (required by FastAPI TestClient
+                                  # and by openai SDK internally)
+
+# ── Environment Config ────────────────────────────────────────────────────────
+python-dotenv==1.0.1              # Loads .env into os.environ via load_dotenv()
+
+# ── Twilio ────────────────────────────────────────────────────────────────────
+twilio==9.2.3                     # Twilio helper (TwiML generation, REST client)
+
+# =============================================================================
+#  TESTING DEPENDENCIES (Milestone 4)
+# =============================================================================
+
+pytest==8.2.2                     # Test runner
+pytest-asyncio==0.23.7            # Async test support
+pytest-cov==5.0.0                 # Coverage reports: --cov=milestone3
+anyio[trio]==4.4.0                # Async backend for pytest-asyncio
+
+# stdlib used (no install needed):
+# logging, hmac, hashlib, base64, re, json, os, datetime,
+# typing, threading, time, unittest.mock, contextlib, urllib.parse
