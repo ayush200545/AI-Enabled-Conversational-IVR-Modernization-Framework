@@ -1,0 +1,6 @@
+Test Case ID,Module Name,Test Description,Expected Result,Actual Result,Status
+TC001,FastAPI App,Verify / server status returns 200,JSON with success message,JSON with success message,Pass
+TC002,Twilio Webhook,Verify /ivr/welcome returns valid TwiML,Valid XML string with <Response><Gather>,Valid XML string returned,Pass
+TC003,Twilio Webhook,Verify /ivr/handle-input falls back on empty input,TwiML asking to repeat,TwiML asking to repeat,Pass
+TC004,AI Integration,Simulate 'book flight' intent,Response requesting destination,Response requesting destination,Pass
+TC005,TwiML Utils,Check create_twiml_say output format,Properly formatted XML block,Properly formatted XML block,Pass

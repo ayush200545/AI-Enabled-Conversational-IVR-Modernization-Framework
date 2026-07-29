@@ -1,0 +1,9 @@
+Planned Sprint,Actual Sprint,US ID,User Story Description,MOSCOW,Dependency,Assignee,Status
+Sprint 1,Sprint 1,US001,Analyze legacy VXML system architecture,Must Have,None,Intern 1,Done
+Sprint 1,Sprint 1,US002,Document integration points for ACS/BAP,Must Have,US001,Intern 2,Done
+Sprint 2,Sprint 2,US003,Setup FastAPI boilerplate and ngrok,Must Have,None,Intern 1,Done
+Sprint 2,Sprint 2,US004,Implement Twilio Webhook Endpoints,Must Have,US003,Intern 2,Done
+Sprint 3,Sprint 3,US005,Develop AI Integration Mock Service,Should Have,US004,Intern 1,Done
+Sprint 3,Sprint 3,US006,Test end-to-end voice flow,Must Have,US005,Intern 2,Done
+Sprint 4,Sprint 4,US007,Complete Agile and Testing Documentation,Must Have,None,Intern 1,Done
+Sprint 4,Sprint 4,US008,Prepare for final demo presentation,Must Have,US007,Intern 2,Done

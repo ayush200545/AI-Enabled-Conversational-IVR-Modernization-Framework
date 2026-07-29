@@ -1,0 +1,5 @@
+Sl No,Submitted Date,Description,Detected Sprint,Assigned To,Type Of Defect,Action Taken,Action Taken Date,Status(Open/Closed),Remarks
+1,2026-03-01,Ngrok webhook URL giving 404 in Twilio Console,Sprint 2,Backend Team,Configuration,Updated ngrok URL in Twilio console voice settings,2026-03-01,Closed,Verified successfully
+2,2026-03-10,TwiML Gather timeout is too short for long queries,Sprint 3,Backend Team,Functional,Increased timeout to 5 seconds in create_twiml_gather,2026-03-11,Closed,Latency improved
+3,2026-03-18,AI layer returns 500 when SpeechResult is empty,Sprint 3,Integration,Logic,Added fallback block to handle None values,2026-03-19,Closed,Handled gracefully
+4,2026-03-22,Missing language parameter in text-to-speech causing accent issues,Sprint 4,UI/UX,UI,Added language='en-IN' to Say and Gather tags,2026-03-22,Closed,Pronunciation fixed
